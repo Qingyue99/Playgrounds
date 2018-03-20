@@ -12,6 +12,19 @@
     text-align: center;
 }
 
+.s-bg-image{
+    background: #151515 url(../images/Sumner_31.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    display: table;
+    position: relative;
+}
+
 .intro-overlay {
     position: absolute;
     top:0px;
@@ -19,8 +32,10 @@
     width: 100%;
     height: 100%;
     background: #111111;
-    opacity: .85;
+    opacity: .75;
 }
+
+
 
 .intro-content {
     display: table-cell;
@@ -45,7 +60,7 @@
 
 button.stroke, .button.stroke {
     background: transparent !important;
-    border: 3px solid #313131;
+    border: 3px solid white;
     line-height: 4.8rem;
 }
 
@@ -139,6 +154,10 @@ input[type="button"] {
 .smallheader-title{
     text-align:center;
 }
+.smallheader-titleWhite{
+    text-align:center;
+    color: white;
+}
 
 .bars{
     background-color: #212529;
@@ -154,7 +173,7 @@ input[type="button"] {
 .bgbox{
     width:100%;
     min-height:65px;
-    background-color:#AEE8E6;
+    background-color:white;
     padding:10px;
     text-align:center;
     margin:10px;
@@ -175,6 +194,15 @@ input[type="button"] {
 #map{
     height:600px;
     width:100%;
+}
+
+#mapfixed{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/HexNew_Legend.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*border: 1px solid red;*/
 }
 
 #interactiveMap{
