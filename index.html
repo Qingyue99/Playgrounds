@@ -161,13 +161,12 @@
 </section> <!-- /process-->
 
 
-
 <div class ="s-bg-image">
 <section class="affinity diagram">
   <div class="container">
       <div class="row spacebt">
           <div class="col-md-12">
-              <h5 class="smallheader-titleWhite">PLAY EQUIPMENT</h5>
+              <h5 class="smallheader-titleWhite"><span style ="background-color:rgba(255,255,255,0.3); text-shadow: 2px 2px black">PLAY EQUIPMENT</span></h5>
           </div>
           <div class="col-md-2 col-3 bgbox s-item-text">Swings(43)</div>
           <div class="col-md-2 col-3 bgbox">Climbers(43)</div>
@@ -221,8 +220,7 @@
 
     <div class="row">
         <div class="col-md-10 offset-md-1">
-            <div id="mapfixed">
-            </div>
+            <img id="mapfixed" src="images/HexNew_Legend.jpeg">
         </div>
     </div>
 </div>
@@ -235,10 +233,10 @@
             <h5 class="question"><span style ="background-color:#ffebcd">Features and Amenities of Playgrounds</span></>
         </div>
         <div class="col-md-10 offset-md-1">
-            <div class ="btn btn-primary outline" id="1">Water</div>
-            <div class ="btn btn-primary outline" id="2">Open-ended Playspace</div>
-            <div class ="btn btn-primary outline" id="3">Playgrounds</div>
-            <div class ="btn btn-primary outline" id="4">Playgrounds in School</div>
+            <div class ="btn btn-primary outline" id="1">Playgrounds</div>
+            <div class ="btn btn-primary outline" id="2">Water</div>
+            <div class ="btn btn-primary outline" id="3">Open-ended Playspace</div>
+            <div class ="btn btn-primary outline" id="4">School Playlots </div>
         </div>
         <div id="map"></div>
     </div>
@@ -253,12 +251,15 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
-<script src="assets/ajax.js"></script>
-<script src="assets/leaflet.shpfile.js"></script>
-<script src="js/index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--<script src="assets/ajax.js"></script>-->
+<script src="assets/leaflet.ajax.js"></script>
 <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
         integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
         crossorigin=""></script>
+    <script src="assets/shp.js"></script>
+<script src="assets/leaflet.shpfile.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </section>

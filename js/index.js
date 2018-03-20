@@ -62,8 +62,6 @@ var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-m
 // console.log(openSpace_EBonly);
 
 
-var geojsonLayer = L.GeoJSON.AJAX("openSpace_EB.geojson").addTo(map);
-myLayer.addData(geojsonFeature);
 
 var myStyle = {
     "color": "#ff7800",
@@ -71,15 +69,30 @@ var myStyle = {
     "opacity": 0.65
 };
 
-// INTERACTIVE MAP
-// initialize the map on the "map" div with a given center and zoom
-var interactiveMap = L.map('interactiveMap',{
-    scrollWheelZoom: false,
-    zoomSnap: 0.2
-}).setView([42.3702, -71.0389], 13);
+var style1 = {
+    onEachFeature: function(feature, layer) {
+    },
+    style: function(feature) {
+        return {
+            opacity: 0.8,
+            fillOpacity:0.6,
+            radius:0.05,
+            color: '#DE561C'
+        }
+    }
+};
+var style2= {
+    onEachFeature: function(feature, layer) {
+    },
+    style: function(feature) {
+        return {
+            opacity: 0.8,
+            fillOpacity:0.6,
+            radius:0.05,
+            color: '#DE561C'
+        }
+    }
+};
+L.shapefile('../assets/Boston_OS_facilities.zip', style1).addTo(map);
 
-var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoicXF5dWUiLCJhIjoiY2lpcGJtNG13MDFvNXRya244MGVmNWpseSJ9.Cjq1RBJLYTgEawZX--r_FQ'}).addTo(interactiveMap);
-
+// L.shapefile('../assets/Boston_OS_facilities.zip', style2).addTo(map);
