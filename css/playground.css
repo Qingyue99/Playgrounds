@@ -1,3 +1,209 @@
-.jumbotron{
-    background-image: url("../images/03_-_Default1noCulling.JPG");
+#intro {
+    background: #151515 url(../images/playground_back.jpg) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    display: table;
+    position: relative;
+    text-align: center;
 }
+
+.intro-overlay {
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    opacity: .85;
+}
+
+.intro-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transform: translateY(-2.1rem);
+    -ms-transform: translateY(-2.1rem);
+    transform: translateY(-2.1rem);
+}
+
+.intro-content .button {
+    color: #FFFFFF !important;
+    border-color: rgba(255, 255, 255, 0.3);
+    height: 6rem !important;
+    line-height: 5.4rem !important;
+    padding: 0 3.5rem 0 3rem !important;
+    margin-top: .6rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+button.stroke, .button.stroke {
+    background: transparent !important;
+    border: 3px solid #313131;
+    line-height: 4.8rem;
+}
+
+input[type="button"] {
+    display: inline-block;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    height: 5.4rem;
+    line-height: 5.4rem;
+    padding: 0 3rem;
+    margin: 0 .3rem 1.2rem 0;
+    background: #d8d8d8;
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.intro-content h2 {
+    color:#669B7C;
+    font-family: "GrifoL-Bold","Georgia",serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: 10%;
+   rgba(255, 255, 255, 0.6);
+
+}
+
+
+
+
+.section-intro h1 {
+    font-family: "poppins-semibold", serif;
+    font-size: 2.6rem;
+    color: #313131;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+}
+.section-intro h5 {
+    color:#669B7C;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+    padding-top: 30px;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3.6rem;
+    position: relative;
+}
+
+.question{
+    /*font-family: "poppins-semibold", serif;*/
+    margin-top: 3.6rem;
+    color:#669B7C;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.intro-info .lead {
+    text-align: justify;
+    padding-left: 13rem;
+}
+
+.row section-intro .lead1 {
+    text-align: justify;
+    padding-left: 13rem;
+    font-weight: bold;
+}
+
+.smalltitle-wrapper{
+   padding-top:20px;
+}
+
+.smallheader-title{
+    text-align:center;
+}
+
+.bars{
+    background-color: #212529;
+    margin-bottom: 45px;
+    height:15px;
+}
+.barText{
+    color: black;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.bgbox{
+    width:100%;
+    min-height:65px;
+    background-color:#AEE8E6;
+    padding:5px;
+    text-align:center;
+    margin:10px;
+    box-shadow: 0 10px 10px 0 rgba(33,37,41, 0.19);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.spacebt{
+    margin-top:20px;
+}
+
+#map{
+    height:600px;
+    width:100%;
+}
+
+#interactiveMap{
+    height:600px;
+    width:100%;
+}
+
+.btn {
+    padding: 0 2rem 0 2rem;
+    border-color: rgba(255, 255, 255, 0.3);
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size:1rem;
+    line-height:1.5rem;
+    font-family:"Georgia",serif;
+    border-radius: 4px;
+    margin:5px;
+    letter-spacing: .25rem;
+}
+
+.btn-primary {
+    background-color:#679A7C;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #679A7C;
+    background-color:transparent;
+}
+

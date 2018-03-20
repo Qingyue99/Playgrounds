@@ -5,13 +5,14 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>The Margins-Article</title>
-  <meta name="description" content="">
+  <meta name="description" content="Playgrounds in East Boston">
   <meta name="author" content="">
+  <meta name="keywords" content="Playgrounds in East Boston">
+  <title>How walkable are playgrounds in East Boston?</title>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1ma，ximum-scale=1">
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,18 +21,22 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
   <!--<link rel="stylesheet" href="css/skeleton.css">-->
- <link rel="stylesheet" href="css/EastBoston_styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/playground.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/EastBoston_styles.css">
+    <link rel="stylesheet" href="css/playground.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body>
+<>
     
 <!-- Hamburger menu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,12 +56,9 @@
     <span></span>
     
     <ul id="menu">
-        <a href="#" ><li style="font-size:4rem">Article 1</li></a>
-        <a href="#"><li style="font-size:4rem">Article 2</li></a>
-        <a href="#"><li style="font-size:4rem">Article 3</li></a>
-        <a href="#"><li style="font-size:4rem">Article 4</li></a>
-        <a href="#"><li style="font-size:4rem">Article 5</li></a>
-        <a href="#"><li style="font-size:4rem">Article 6</li></a>
+        <a href="https://web.northeastern.edu/visualizingeastie/the-people" ><li style="font-size:2rem">The people</li></a>
+        <a href="https://web.northeastern.edu/visualizingeastie/the-environment"><li style="font-size:2rem">The environment</li></a>
+        <a href="https://web.northeastern.edu/visualizingeastie/the-built-city"><li style="font-size:2rem">The built city</li></a>
 
     </ul>
   </div>
@@ -64,43 +66,194 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <h1 class="display-3">Hello World</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            </div>
+<!-- ——————————————————————Intro-content—————————————————————————— -->
+
+<section id="intro">
+
+<div class="intro-overlay"></div>
+
+<div class="intro-content">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h1 class="EastBoston_head1">Playing Around in Eastie Playgrounds</h1>
+                <h2>Even in the cold winter season of East Boston, <span style ="font-size: 3rem">66.7%</span>parents still bring their kid(s) to playgrounds no less than<span style ="font-size: 3rem"> 3-5</span> times per month.</h2>
+                <h5 class="EastBoston_byline">By Qingyue Li</h5>
+            <p class="intro-position">
+                <a class="button stroke smoothscroll" href="#about" title="">Explore Data</a>
+                <a class="button stroke smoothscroll" href="#portfolio" title="">Project</a>
+            </p>
         </div>
     </div>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-10 offset-md-1 col-12">
-            <div class="column EastBoston">
-                <h1 class="EastBoston_head">This is the headline</h1>
+</div> <!-- /intro-content -->
+</section> <!-- /intro -->
+<!-- ——————————————————————Explore Data—————————————————————————— -->
 
-                <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
-                <h5 class="EastBoston_byline">By Yourname Goeshere</h5>
+<section id="about">
+    <div class="container">
+       <div class="row">
+           <div class="col-md-10 offset-md-1">
+               <h5 class="question"><span style ="background-color:#ffebcd">Why are Outdoor Playground Important for Kids Development?</span></h5>
+               <p class="lead1">Every kid needs outdoor playtime for a daily refresher. Lots of parents underestimate the importance of outdoor activities to <span style ="background-color:#ffebcd">enhance imagination and open-ended play.</span> Indoor play toys, for example, LEGO, let kids using blocks to construct specific objects, with step by step guide directions. But if kids always need directions, they started lose their thought for create something new. This is part of the reason why indoor-toys cannot replace the importance of outdoor playgrounds. In Interview with <span style ="background-color:#ffebcd">Aldo Ghirin, Senior Planner in Boston Parks & Recreation Department,</span> he mentioned city of Boston also try to build more playground in the edge of the larger park to shorter the travel distance for parents and their young kids.
+                  </br>
 
+                   East Boston have <span style ="background-color:#ffebcd">higher percent children population</span> compared to Boston. In order to understand what facilities in playgrounds are available for those large children group, I posted survey on <span style ="background-color:#ffebcd">Facebook and lean in Boston</span> to learn more about the what parents needs in Boston.
+                            </p>
+            </div>
+       </div>
+       <div class="row">
+           <div class="col-md-4 col-12">
+               <p class="lead">
+                   When asked, "When choosing a playground what are the top 3 factors that influence your choice?"
+                   Parents replied:
+               </p>
+           </div>
 
-                <h2 class="EastBoston_head">This is a section head</h2>
+           <div class="col-md-8 col-12">
+               <div id="barChart">
+               </div>
+           </div>
+       </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="lead" align="center"><span style ="color:#2499AE;"> 93% of Parents think proximity to Home is important.</span></p>
+            </div>
         </div>
+
+
+
+
+         <div class="row smalltitle-wrapper">
+             <div class="col-md-10 offset-md-1">
+               <h5 class="smallheader-title"><span style ="background-color:#ffebcd">The groups I posted:</span></h5>
+               <p class="lead1" align="center">East Boston Open Discussion (no racists) , East Boston Open Discussion
+                   Boston Moms Swap/Sell Site, Eastie Village Family Association,
+                   Boston Babies! Clothing Swaps, East Boston..02128,
+                   East Boston Environmental, Boston Parks and Recreation Department
+               </p>
+             </div>
+         </div>
+
+        <div class="row">
+            <div class="col-md-8 col-12">
+                <img src="assets/Summer_Winter.png">
+                </div>
+            <div class="col-md-4 col-12">
+
+                <p class="lead">
+                When asked, "In the Winter Vs. Summer season, how often did parents go to a playground with their kid(s)?"
+                Parents replied:
+                </p>
+            </div>
+        </div>
+            <div class="col-12">
+                <p class="lead" align="center"><span style ="color:#2499AE;"> Playgrounds use varies in different seasons.</span>
+                </p>
+            </div>
+            <div class="col-12">
+                <h5 class="question"><span style ="background-color:#ffebcd">What are parents looking for at playgrounds?</span></h5>
+            </div>
+        </div>
+
+
+    </div>
+</section> <!-- /process-->
+
+
+
+
+<section class="affinity diagram">
+  <div class="container">
+      <div class="row spacebt">
+          <div class="col-md-12">
+              <h5 class="smallheader-title"><span style ="background-color:#ffebcd">PLAY EQUIPMENT</span></h5>
+          </div>
+          <div class="col-md-2 col-3 bgbox">Swings(43)</div>
+          <div class="col-md-2 col-3 bgbox">Climbers(43)</div>
+          <div class="col-md-2 col-3 bgbox">Slides & Gliders(40)</div>
+          <div class="col-md-2 col-3 bgbox">Overhead(16)</div>
+          <div class="col-md-2 col-3 bgbox">Water Features,especially for hot Weather Cooling(4) </div>
+          <div class="col-md-2 col-3 bgbox">Bridges(1)</div>
+          <div class="col-md-2 col-3 bgbox">Picnic Tables (2)</div>
+          <div class="col-md-2 col-3 bgbox">Sandpit(1)</div>
+          <div class="col-md-2 col-3 bgbox">Small Push Toys(1)</div>
+
+      </div>
+      <div class="row spacebt">
+          <div class="col-md-12">
+              <h5 class="smallheader-title"><span style ="background-color:#ffebcd">INFRASTRUCTURE</span></h5>
+          </div>
+          <div class="col-md-2 col-3 bgbox">Gathering Space(25)</div>
+          <div class="col-md-2 col-3 bgbox"> Imaginative and open-ended play Space (4)</div>
+          <div class="col-md-2 col-3 bgbox">Open Green Spaces(5)</div>
+          <div class="col-md-2 col-3 bgbox">Trees for Shade/Shaded Seating Areas (7)</div>
+          <div class="col-md-2 col-3 bgbox">Clear Walking Space (1)</div>
+          <div class="col-md-2 col-3 bgbox">Clean Bathrooms(3)</div>
+
+
+      </div>
+      <div class="row spacebt">
+          <div class="col-md-12">
+              <h5 class="smallheader-title"><span style ="background-color:#ffebcd">LOCATION</span></h5>
+          </div>
+          <div class="col-md-2 col-3 bgbox">Proximity to Shops(1)</div>
+          <div class="col-md-2 col-3 bgbox">Proximity to beach(1)</div>
+          <div class="col-md-2 col-3 bgbox">Proximity to nice coffee-place(1)</div>
+          <div class="col-md-2 col-3 bgbox">Proximity to the waterfront</div>
+          <div class="col-md-2 col-3 bgbox">Close to everything(1)</div>
+          <div class="col-md-2 col-3 bgbox">Safety location</div>
+
       </div>
   </div>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-5 offset-md-1">
-                  hello world1
-              </div>
-              <div class="col-md-5">
-                  hello world 2
-              </div>
-          </div>
-      </div>
+
+</section>
+
+<!-- ——————————————————————Project—————————————————————————— -->
+
+<section id="#portfolio">
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h5 class="question"><span style ="background-color:#ffebcd">Compared what Parents Looking for and Existing Playgrounds in East Boston</span></>
+        </div>
+
+
+        <div id="map"></div>
+    </div>
 </div>
-    
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h5 class="question"><span style ="background-color:#ffebcd">Features and Amenities of Playgrounds</span></>
+        </div>
+        <div class="col-md-10 offset-md-1">
+            <div class ="btn btn-primary outline" id="1">Water</div>
+            <div class ="btn btn-primary outline" id="2">Open-ended Playspace</div>
+            <div class ="btn btn-primary outline" id="3">Playgrounds</div>
+            <div class ="btn btn-primary outline" id="4">Playgrounds in School</div>
+        </div>
+        <div id="interactiveMap"></div>
+    </div>
+</div>
+
+
 <h6 class="EastBoston_footer"><span class="EastBoston_footer">Visualizing Eastie</span> is a project of the <a href="https://www.northeastern.edu/visualization/">Information Design and Visualization program</a> at Northeastern University. © 2018</h6>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+<script src="assets/ajax.js"></script>
+<script src="assets/leaflet.shpfile.js"></script>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+        integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+
 </body>
+</section>
 </html>
