@@ -77,11 +77,11 @@ var style1 = {
             opacity: 0.8,
             fillOpacity:0.6,
             radius:0.05,
-            color: '#DE561C'
+            color: '#2D3246'
         }
     }
 };
-var style2= {
+var Playground= {
     onEachFeature: function(feature, layer) {
     },
     style: function(feature) {
@@ -89,10 +89,25 @@ var style2= {
             opacity: 0.8,
             fillOpacity:0.6,
             radius:0.05,
-            color: '#DE561C'
+            color: '#4170A6'
         }
     }
 };
+
+
+var PlaygroundIcon = L.icon({
+    iconUrl: '../images/playgroundICON.png',
+    iconSize:     [38, 95], // size of the icon
+    shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+L.marker([51.5, -0.09], {icon: PlaygroundIcon}).addTo(map);
+
+
 L.shapefile('../assets/Boston_OS_facilities.zip', style1).addTo(map);
+
+L.shapefile('../assets/East Boston Playlots.zip',Playground).addTo(map);
 
 // L.shapefile('../assets/Boston_OS_facilities.zip', style2).addTo(map);
