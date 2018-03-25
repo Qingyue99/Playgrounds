@@ -48,11 +48,11 @@
 }
 
 .intro-content .button {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     border-color: rgba(255, 255, 255, 0.3);
     height: 6rem !important;
     line-height: 5.4rem !important;
-    padding: 0 3.5rem 0 3rem !important;
+    padding: 0 3.5rem 0 3rem;
     margin-top: .6rem;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -183,7 +183,7 @@ input[type="button"] {
 
 .bgbox{
     width:100%;
-    min-height:65px;
+    min-height:85px;
     background-color:rgba(255,255,255,0.7);
     box-shadow: 0 10px 10px 0 rgba(33,37,41, 0.19);
     border-radius: 5px;
@@ -197,6 +197,7 @@ input[type="button"] {
     display: flex;
     border-radius: 5px;
     font-weight:bold;
+    position: relative;
 
 }
 
@@ -223,6 +224,7 @@ input[type="button"] {
 .btn {
     display: inline-block;
     border-radius: 2px;
+    letter-spacing: .25rem;
     margin:1px;
     padding:5px;
     padding-left:6px;
@@ -291,6 +293,27 @@ input[type="button"] {
 }
 
 .lead3{
-    font-size:0.6rem;
+    font-size:1rem;
     font-weight:lighter;
+    margin-bottom:0.3rem;
+    position: absolute;
+    bottom:5px;
+}
+
+a.button.stroke.smoothscroll.recolor{
+    color: black;
+    border:2px solid #7b7070;
+    padding: 0 3.5rem 0 3rem;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
 }

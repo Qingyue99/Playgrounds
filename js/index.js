@@ -31,7 +31,7 @@ d3.csv('assets/top3factors.csv', parse, function(data) {
             return i*60+18+'px' //i = 0,1,2,3
         })
         .text(function (d) {
-            return d.factor;
+            return d.factor + ' ' + d.per + '/90';
         });
 
 });
@@ -68,33 +68,6 @@ var myStyle = {
     "weight": 5,
     "opacity": 0.65
 };
-
-var style1 = {
-    onEachFeature: function(feature, layer) {
-    },
-    style: function(feature) {
-        return {
-            opacity: 0.8,
-            fillOpacity:0.6,
-            radius:0.05,
-            color: '#2D3246'
-        }
-    }
-};
-var Playground= {
-    onEachFeature: function(feature, layer) {
-    },
-    style: function(feature) {
-        return {
-            opacity: 0.8,
-            fillOpacity:0.6,
-            radius:0.05,
-            color: '#4170A6'
-        }
-    }
-};
-
-
 var PlaygroundIcon = L.icon({
     iconUrl: "../images/playground_new.png",
     iconSize:     [25, 25], // size of the icon
@@ -103,6 +76,69 @@ var PlaygroundIcon = L.icon({
     shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+
+
+
+var  option1 = {
+    onEachFeature: function(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    },
+    style: function(feature) {
+        if(feature.properties["Ball_Field"]!=0 && feature.properties.Path!=0){
+            return {
+                opacity: 0.8,
+                fillOpacity:0.6,
+                color: '#ff5325'
+            }
+        } else if(feature.properties["Ball_Field"]!=0){
+            return {
+                opacity: 0.8,
+                fillOpacity:0.6,
+                color: '#ff9ca6'
+            }
+
+        } else if(feature.properties.Path!=0){
+            return {
+                opacity: 0.8,
+                fillOpacity:0.6,
+                color: '#ffbe77'
+            }
+        } else {
+            return {
+                opacity: 0.8,
+                fillOpacity:0.6,
+                color: '#a4a1a7'
+            }
+        }
+    }
+};
+var Playground= {
+    onEachFeature: function(feature, layer) {
+    },
+    // style: function(feature) {
+    //     return {
+    //         opacity: 0.8,
+    //         fillOpacity:0.6,
+    //         radius:0.05,
+    //         color: '#4170A6'
+    //     }
+    // }
+    pointToLayer: function(feature, latlng) {
+        // return L.circleMarker(latlng, {
+        //     opacity: 1,
+        //     fillOpacity: 0.7,
+        //     color: feature.properties.__color__
+        // });
+        return L.marker(latlng, {icon: PlaygroundIcon}).addTo(map);
+    }
+};
+
+
+
 
 L.marker([42.3692, -71.0189], {icon: PlaygroundIcon}).addTo(map);
 
@@ -121,8 +157,56 @@ var School = {
 };
 
 
-L.shapefile('../assets/ttt2.zip',style1).addTo(map);
+var openspace = L.shapefile('../assets/OpenSpace.zip', option1).addTo(map);
 
 L.shapefile('../assets/East Boston Playlots.zip',Playground).addTo(map);
 
 L.shapefile('../assets/School Playlots Polygons East Boston.zip',School).addTo(map);
+
+d3.select('#path').on('click', function () {
+    console.log('clicked');
+    // openspace.resetStyle(function (layer) {
+    //     console.log(layer);
+    // })
+});
+
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+// method that we will use to update the control based on feature properties passed
+info.update = function (obj) {
+    console.log(obj);
+    this._div.innerHTML = '<h4>Playground</h4>' +  (obj ?
+        '<b>' + obj["site_name"]+ '</b><br /> Ball Field:'+ obj["Ball_Field"]
+        : 'Hover over a state');
+};
+
+info.addTo(map);
+
+
+function resetHighlight(e) {
+    openspace.resetStyle(e.target);
+    info.update();
+}
+function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+}
+function highlightFeature(e) {
+    var layer = e.target;
+    layer.setStyle({
+        weight: 5,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+    info.update(layer.feature.properties);
+}
