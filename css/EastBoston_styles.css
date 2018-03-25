@@ -158,68 +158,159 @@ ul#menu li
 
 /* Basic text styles for The Margina
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-h1.EastBoston_head {
-    font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 6rem;
-    line-height: 6rem;
-    margin-top: 10%;
-}
-
-h1.EastBoston_head1 {
-    font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 6rem;
-    line-height: 6rem;
-    margin-top: 10%;
-    color: white;
-}
-
-h2.EastBoston_head {
-    font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 3rem;
-    line-height: 3.4rem;
-    color:#666;
-
-}
-
-h5.EastBoston_byline {
-    font-family: "BentonSansCond-Bold","Helvetica-Bold",sans-serif;
-    font-size: 1.6rem;
-    line-height: 3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color:white;
-}
-
-div.EastBoston p {
-    font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
-    font-size: 1.8rem;
-    line-height: 3rem;
-}
-
-a   {
-    text-decoration: none;
-    border-bottom: 1px orangered solid;
-    color: #232323;
-    padding-bottom: 2px;
-    transition: color 0.3s ease;
+@media (min-width:682px) {
+    h1.EastBoston_head {
+        font-family: "GrifoL-Bold", "Georgia", serif;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-top: 10%;
     }
 
-a:visited {
-    color:black;
+    h1.EastBoston_head1 {
+        font-family: "GrifoL-Bold", "Georgia", serif;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-top: 10%;
+        color: white;
     }
 
-a:hover {
-    color: orangered;
+    h2.EastBoston_head {
+        font-family: "GrifoL-Bold", "Georgia", serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        color: #666;
+
     }
 
-a:active {
-    color: orangered;
+    .intro-content h2 {
+        color:#669B7C;
+        font-family: "BentonSansCond-Regular", "Helvetica", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-top: 5%;
+    rgba(255, 255, 255, 0.6);
+
     }
 
+    h5.EastBoston_byline {
+        font-family: "BentonSansCond-Bold", "Helvetica-Bold", sans-serif;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: white;
+    }
 
+    div.EastBoston p {
+        font-family: "BentonSansCond-Regular", "Helvetica", sans-serif;
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
 
+    a {
+        text-decoration: none;
+        border-bottom: 1px orangered solid;
+        color: #232323;
+        padding-bottom: 2px;
+        transition: color 0.3s ease;
+    }
 
+    a:visited {
+        color: black;
+    }
+
+    a:hover {
+        color: orangered;
+    }
+
+    a:active {
+        color: orangered;
+    }
+
+    .bgbox{
+        width:100%;
+        min-height:85px;
+        background-color:rgba(255,255,255,0.7);
+        box-shadow: 0 10px 10px 0 rgba(33,37,41, 0.19);
+        border-radius: 5px;
+        padding:10px;
+        text-align:center;
+        margin:10px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        border-radius: 5px;
+        font-weight:bold;
+        position: relative;
+
+    }
+
+    .spacebt{
+        margin-top:20px;
+        /*margin-left:-35px;*/
+    }
+}
+/*_____________mobile____________________*/
+    @media (max-width:682px) {
+        h1.EastBoston_head {
+            font-family: "GrifoL-Bold", "Georgia", serif;
+            font-size: 4rem;
+            line-height: 6rem;
+            margin-top: 10%;
+        }
+
+        h1.EastBoston_head1 {
+            font-family: "GrifoL-Bold", "Georgia", serif;
+            font-size: 3.5rem;
+            line-height: 4rem;
+            margin-top: 10%;
+            color: white;
+        }
+
+        .intro-content h2 {
+            color:#669B7C;
+            font-family: "BentonSansCond-Regular", "Helvetica", sans-serif;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            margin-top: 5%;
+        rgba(255, 255, 255, 0.6);
+
+        }
+        h5.EastBoston_byline {
+            font-family: "BentonSansCond-Bold", "Helvetica-Bold", sans-serif;
+            font-size: 1.3rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            color: white;
+        }
+        .bgbox{
+            width:100%;
+            min-height:85px;
+            background-color:rgba(255,255,255,0.7);
+            box-shadow: 0 10px 10px 0 rgba(33,37,41, 0.19);
+            border-radius: 5px;
+            padding:10px;
+            text-align:center;
+            margin:10px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            border-radius: 5px;
+            font-weight:bold;
+            position: relative;
+
+        }
+
+        .spacebt{
+            margin-top:20px;
+            /*margin-left:-35px;*/
+        }
+    }
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -237,3 +328,13 @@ h6.EastBoston_footer {
 span.EastBoston_footer {
     color: orangered;
 }
+
+/*____________col.3_______________________*/
+/*@media (max-width:682px) {*/
+
+/*.col-3 {*/
+      /*-webkit-box-flex: 0;*/
+      /*-ms-flex: 0 0 25%;*/
+      /*flex: none;*/
+      /*max-width:none;*/
+  /*}}*/
