@@ -1,5 +1,1 @@
-Frequency,Summer,Winter
-Less than 3 time:,4,27
-3-5 times,4,36
-6-8 times,17,8
-More than 8 times + Everyday:,61,15
+Frequency,Summer,Winter< 3 times,3,313-5 times,7,366-8 times,13,8>= 8 times ,67,15

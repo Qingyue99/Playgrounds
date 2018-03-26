@@ -185,6 +185,13 @@ input[type="button"] {
     /*border: 1px solid red;*/
 }
 
+#mapfixed0{
+    width: 100%;
+    height: auto;
+    /*border: 1px solid red;*/
+}
+
+
 #interactiveMap{
     height:600px;
     width:100%;
