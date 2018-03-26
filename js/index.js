@@ -51,7 +51,7 @@ function parse(d) {
 var map = L.map('map',{
     scrollWheelZoom: false,
     zoomSnap: 0.2
-}).setView([42.3692, -71.0189], 13);
+}).setView([42.3692, -71.0399], 13);
 
 var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
     maxZoom: 18,
@@ -69,7 +69,7 @@ var myStyle = {
     "opacity": 0.65
 };
 var PlaygroundIcon = L.icon({
-    iconUrl: "../images/playground_new.png",
+    iconUrl: "images/playground_new.png",
     iconSize:     [25, 25], // size of the icon
     // shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
@@ -88,13 +88,7 @@ var  option1 = {
         });
     },
     style: function(feature) {
-        if(feature.properties["Ball_Field"]!=0 && feature.properties.Path!=0){
-            return {
-                opacity: 0.8,
-                fillOpacity:0.6,
-                color: '#ff5325'
-            }
-        } else if(feature.properties["Ball_Field"]!=0){
+         if(feature.properties["Ball_Field"]!=0){
             return {
                 opacity: 0.8,
                 fillOpacity:0.6,
@@ -105,13 +99,13 @@ var  option1 = {
             return {
                 opacity: 0.8,
                 fillOpacity:0.6,
-                color: '#ffbe77'
+                color: '#ff5325'
             }
         } else {
             return {
                 opacity: 0.8,
-                fillOpacity:0.6,
-                color: '#a4a1a7'
+                fillOpacity:0.7,
+                color: '#5b5a5e'
             }
         }
     }
@@ -157,11 +151,11 @@ var School = {
 };
 
 
-var openspace = L.shapefile('../assets/OpenSpace.zip', option1).addTo(map);
+var openspace = L.shapefile('assets/OpenSpace.zip', option1).addTo(map);
 
-L.shapefile('../assets/East Boston Playlots.zip',Playground).addTo(map);
+L.shapefile('assets/East Boston Playlots.zip',Playground).addTo(map);
 
-L.shapefile('../assets/School Playlots Polygons East Boston.zip',School).addTo(map);
+L.shapefile('assets/School Playlots Polygons East Boston.zip',School).addTo(map);
 
 d3.select('#path').on('click', function () {
     console.log('clicked');
@@ -182,8 +176,9 @@ info.onAdd = function (map) {
 info.update = function (obj) {
     console.log(obj);
     this._div.innerHTML = '<h4>Playground</h4>' +  (obj ?
-        '<b>' + obj["site_name"]+ '</b><br /> Ball Field:'+ obj["Ball_Field"]
-        : 'Hover over a state');
+        '<b>' + obj["site_name"]+ '</b><br /> Ball Field:'+ obj["Ball_Field"]+'</b><br /> Path:'+ obj["Path"]
+        : 'mouse over to explore more');
+    // this._div.style.left = "-500px";
 };
 
 info.addTo(map);
@@ -200,9 +195,10 @@ function highlightFeature(e) {
     var layer = e.target;
     layer.setStyle({
         weight: 5,
-        color: '#666',
+//        color: '#666',
+        color: '#F6C900',
         dashArray: '',
-        fillOpacity: 0.7
+        fillOpacity: 0.8
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
