@@ -51,15 +51,12 @@ function parse(d) {
 var map = L.map('map',{
     scrollWheelZoom: false,
     zoomSnap: 0.2
-}).setView([42.3692, -71.0399], 13);
+}).setView([42.3792, -71.0179], 14);
 
-var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+var OpenMapSurfer_Grayscale  = L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roadsg/x={x}&y={y}&z={z}', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://giscience.uni-hd.de/">OpenStreetMap</a>'
 }).addTo(map);
-
-// L.shapefile('/Users/safehaven/Documents/project2_Qingyue/assets/openSpace_EBonly.shp').addTo(map);
-// console.log(openSpace_EBonly);
 
 
 
@@ -88,24 +85,18 @@ var  option1 = {
         });
     },
     style: function(feature) {
-         if(feature.properties["Ball_Field"]!=0){
-            return {
-                opacity: 0.8,
-                fillOpacity:0.6,
-                color: '#ff9ca6'
-            }
-
-        } else if(feature.properties.Path!=0){
+         if(feature.properties["Ball_Field"]!=0||feature.properties.Path!=0){
             return {
                 opacity: 0.8,
                 fillOpacity:0.6,
                 color: '#ff5325'
             }
+
         } else {
             return {
                 opacity: 0.8,
                 fillOpacity:0.7,
-                color: '#5b5a5e'
+                color: '#ff5325'
             }
         }
     }
@@ -175,9 +166,9 @@ info.onAdd = function (map) {
 // method that we will use to update the control based on feature properties passed
 info.update = function (obj) {
     console.log(obj);
-    this._div.innerHTML = '<h4>Playground</h4>' +  (obj ?
-        '<b>' + obj["site_name"]+ '</b><br /> Ball Field:'+ obj["Ball_Field"]+'</b><br /> Path:'+ obj["Path"]
-        : 'mouse over to explore more');
+    this._div.innerHTML = "<h4>Playground</h4>" +  (obj ?
+        "<b>" + obj["site_name"]+ "</b><br /> <img style='width:20px' src='assets/ballfield.png'>&nbsp;Ball Field:"+ obj["Ball_Field"]+"</b><br /> <img style='width:20px' src='assets/path.png'>&nbsp;Path:"+ obj["Path"]
+        +"</b><br /> <img style='width:20px' src='assets/garden.png'>&nbsp;Garden:"+ obj["Garden"]+"</b><br /> <img style='width:20px' src='assets/waterspray.png'>&nbsp;Waterspray:"+ obj["Waterspray"]: "mouse over to explore the detailed amenities of each playground");
     // this._div.style.left = "-500px";
 };
 
