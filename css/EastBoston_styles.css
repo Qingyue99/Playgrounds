@@ -167,6 +167,17 @@ ul#menu li
         margin-top: 10%;
     }
 
+    h6.EastBoston_footer {
+        font-family: "GrifoL-Bold","Georgia",serif;
+        font-size: 1.2rem;
+        color: #666;
+        text-transform: none;
+        text-align: center;
+        letter-spacing: 0;
+        border-top: 1px solid #666;
+        padding: 20px;
+    }
+
     h1.EastBoston_head1 {
         font-family: "GrifoL-Bold", "Georgia", serif;
         font-size: 5.5rem;
@@ -319,6 +330,17 @@ ul#menu li
 
         }
 
+        h6.EastBoston_footer {
+            font-family: "GrifoL-Bold","Georgia",serif;
+            font-size: 1rem;
+            color: #666;
+            text-transform: none;
+            text-align: center;
+            letter-spacing: 0;
+            border-top: 1px solid #666;
+            padding: 20px;
+        }
+
         .spacebt{
             margin-top:20px;
             /*margin-left:-35px;*/
@@ -338,16 +360,7 @@ ul#menu li
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-h6.EastBoston_footer {
-    font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 1.5rem;
-    color: #666;
-    text-transform: none;
-    text-align: center;
-    letter-spacing: 0;
-    border-top: 1px solid #666;
-    padding: 20px;
-}
+
 
 span.EastBoston_footer {
     color: orangered;

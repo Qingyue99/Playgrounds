@@ -82,8 +82,9 @@ var  option1 = {
     onEachFeature: function(feature, layer) {
         layer.on({
             mouseover: highlightFeature,
+            click: highlightFeature,
             mouseout: resetHighlight,
-            click: zoomToFeature
+            // click: zoomToFeature
         });
     },
     style: function(feature) {
