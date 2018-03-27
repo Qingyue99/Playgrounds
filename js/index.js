@@ -76,6 +76,8 @@ var PlaygroundIcon = L.icon({
 
 
 
+
+
 var  option1 = {
     onEachFeature: function(feature, layer) {
         layer.on({
@@ -125,6 +127,7 @@ var Playground= {
 
 
 
+
 L.marker([42.3692, -71.0189], {icon: PlaygroundIcon}).addTo(map);
 
 
@@ -136,7 +139,7 @@ var School = {
             opacity: 0.8,
             fillOpacity:0.6,
             radius:0.05,
-            color: '#ff0000'
+            color: '#2172a7'
         }
     }
 };
@@ -168,7 +171,7 @@ info.update = function (obj) {
     console.log(obj);
     this._div.innerHTML = "<h4>Playground</h4>" +  (obj ?
         "<b>" + obj["site_name"]+ "</b><br /> <img style='width:20px' src='assets/ballfield.png'>&nbsp;Ball Field:"+ obj["Ball_Field"]+"</b><br /> <img style='width:20px' src='assets/path.png'>&nbsp;Path:"+ obj["Path"]
-        +"</b><br /> <img style='width:20px' src='assets/garden.png'>&nbsp;Garden:"+ obj["Garden"]+"</b><br /> <img style='width:20px' src='assets/waterspray.png'>&nbsp;Waterspray:"+ obj["Waterspray"]: "mouse over to explore the detailed amenities of each playground");
+        +"</b><br /> <img style='width:20px' src='assets/garden.png'>&nbsp;Garden:"+ obj["Garden"]+"</b><br /> <img style='width:20px' src='assets/waterspray.png'>&nbsp;Waterspray:"+ obj["Waterspray"]: "Hover over to explore the detailed amenities of each playground");
     // this._div.style.left = "-500px";
 };
 
