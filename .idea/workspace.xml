@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b60b1c9-90e3-4e19-b998-06084d142969" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/ballfield.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/garden.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/path.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/waterspray.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/NEW ONE-01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/NEWONE-01.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/EastBoston_styles.css" afterPath="$PROJECT_DIR$/css/EastBoston_styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/playground.css" afterPath="$PROJECT_DIR$/css/playground.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="209" column="39" lean-forward="false" selection-start-line="209" selection-start-column="39" selection-end-line="209" selection-end-column="45" />
+              <caret line="102" column="26" lean-forward="true" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#a#1;n#ul#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
@@ -80,17 +72,17 @@
       <file leaf-file-name="playground.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/playground.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="294" column="22" lean-forward="false" selection-start-line="294" selection-start-column="22" selection-end-line="294" selection-end-column="22" />
+            <state relative-caret-position="142">
+              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="-162">
               <caret line="170" column="169" lean-forward="false" selection-start-line="170" selection-start-column="169" selection-end-line="170" selection-end-column="169" />
               <folding>
                 <marker date="1522124342551" expanded="true" signature="1366:1372" ph="©" />
@@ -114,18 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="path.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/path.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EastBoston_styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EastBoston_styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/EastBoston_styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="159" column="27" lean-forward="false" selection-start-line="159" selection-start-column="27" selection-end-line="159" selection-end-column="27" />
+            <state relative-caret-position="225">
+              <caret line="329" column="26" lean-forward="false" selection-start-line="329" selection-start-column="26" selection-end-line="329" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -143,8 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>in Eas</find>
-      <find>row</find>
       <find>Sum</find>
       <find>p</find>
       <find>50px</find>
@@ -171,8 +154,10 @@
       <find>menu</find>
       <find>h4Small</find>
       <find>h4</find>
-      <find>mouse</find>
       <find>nb</find>
+      <find>mouse</find>
+      <find>Why a</find>
+      <find>question</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -188,9 +173,9 @@
         <option value="$PROJECT_DIR$/css/skeleton.css" />
         <option value="$PROJECT_DIR$/assets/top3factors.csv" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/EastBoston_styles.css" />
-        <option value="$PROJECT_DIR$/css/playground.css" />
         <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/css/playground.css" />
+        <option value="$PROJECT_DIR$/css/EastBoston_styles.css" />
       </list>
     </option>
   </component>
@@ -200,7 +185,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-24" />
     <option name="y" value="153" />
     <option name="width" value="1440" />
@@ -312,15 +297,15 @@
       <workItem from="1521923611830" duration="579000" />
       <workItem from="1521924283683" duration="7994000" />
       <workItem from="1522011971374" duration="6087000" />
-      <workItem from="1522068826169" duration="13611000" />
+      <workItem from="1522068826169" duration="13878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105911000" />
+    <option name="totallyTimeSpent" value="106178000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-24" y="153" width="1440" height="831" extended-state="0" />
+    <frame x="-9" y="23" width="1440" height="831" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24806201" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -823,14 +808,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/EastBoston_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="159" column="27" lean-forward="false" selection-start-line="159" selection-start-column="27" selection-end-line="159" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/Summervs.Winter.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -839,18 +816,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/playground.css">
+    <entry file="file://$PROJECT_DIR$/assets/NEWONE-01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/NEW ONE-01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="294" column="22" lean-forward="false" selection-start-line="294" selection-start-column="22" selection-end-line="294" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-162">
+          <caret line="170" column="169" lean-forward="false" selection-start-line="170" selection-start-column="169" selection-end-line="170" selection-end-column="169" />
+          <folding>
+            <marker date="1522124342551" expanded="true" signature="1366:1372" ph="©" />
+            <marker date="1522124342551" expanded="true" signature="4283:4293" ph="..." />
+            <marker date="1522124342551" expanded="true" signature="4322:4328" ph=" " />
+            <marker date="1522124342551" expanded="true" signature="4384:4394" ph="..." />
+            <marker date="1522124342551" expanded="true" signature="4418:4424" ph=" " />
+            <marker date="1522124342551" expanded="true" signature="4477:4487" ph="..." />
+            <marker date="1522124342551" expanded="true" signature="4513:4519" ph=" " />
+            <marker date="1522124342551" expanded="true" signature="4567:4577" ph="..." />
+            <marker date="1522124342551" expanded="true" signature="4607:4613" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="209" column="39" lean-forward="false" selection-start-line="209" selection-start-column="39" selection-end-line="209" selection-end-column="45" />
+          <caret line="102" column="26" lean-forward="true" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#li#0;n#a#0;n#ul#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#a#1;n#ul#0;n#div#0;n#nav#0;n#html#0;n#!!top" expanded="true" />
@@ -876,12 +873,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/NEWONE-01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/NEW ONE-01.png">
+    <entry file="file://$PROJECT_DIR$/assets/path.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -891,26 +883,19 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/path.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/css/playground.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/css/EastBoston_styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="170" column="169" lean-forward="false" selection-start-line="170" selection-start-column="169" selection-end-line="170" selection-end-column="169" />
-          <folding>
-            <marker date="1522124342551" expanded="true" signature="1366:1372" ph="©" />
-            <marker date="1522124342551" expanded="true" signature="4283:4293" ph="..." />
-            <marker date="1522124342551" expanded="true" signature="4322:4328" ph=" " />
-            <marker date="1522124342551" expanded="true" signature="4384:4394" ph="..." />
-            <marker date="1522124342551" expanded="true" signature="4418:4424" ph=" " />
-            <marker date="1522124342551" expanded="true" signature="4477:4487" ph="..." />
-            <marker date="1522124342551" expanded="true" signature="4513:4519" ph=" " />
-            <marker date="1522124342551" expanded="true" signature="4567:4577" ph="..." />
-            <marker date="1522124342551" expanded="true" signature="4607:4613" ph=" " />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="329" column="26" lean-forward="false" selection-start-line="329" selection-start-column="26" selection-end-line="329" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
